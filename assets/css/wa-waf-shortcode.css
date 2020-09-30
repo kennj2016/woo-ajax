@@ -1,0 +1,344 @@
+.wa-waf-list
+{
+	margin: 15px 0;
+}
+.wa-waf-list-top
+{
+	border: 1px solid #E3E3E3;
+}
+.wa-waf-list-top:before, .wa-waf-list-top:after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wa-waf-list-top > DIV
+{
+	float: left;
+}
+.wa-waf-list-top .wa-waf-list-order
+{
+	float: right;
+}
+.wa-waf-list-top UL
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.wa-waf-list-top-section > UL > LI
+{
+	display: inline-block;
+	padding: 0px 10px;
+	margin: 5px 0;
+	border-right: 1px solid #E3E3E3;
+	cursor: pointer;
+	position: relative;
+	vertical-align: top;
+}
+.wa-waf-list-order.wa-waf-list-top-section > UL > LI
+{
+	border-right: none;
+	border-left: 1px solid #E3E3E3;
+}
+.wa-waf-filter-label
+{
+	position: relative;
+	padding-right: 20px;
+}
+.wa-waf-filter-label I
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.wa-waf-filter-label:before, .wa-waf-filter-label:after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wa-waf-filter-selected-term
+{
+	min-height: 20px;
+	font-size: 12px;
+	max-width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #ABAAAA;
+}
+.wa-waf-filter-terms
+{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	/*+opacity: 0;*/
+	-filter: alpha(opacity=0);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 990;
+}
+.wa-waf-list-order .wa-waf-filter-terms
+{
+	left: auto;
+	right: 0;
+}
+.wa-waf-list-top-section > UL > LI:hover > .wa-waf-filter-terms
+{
+	/*+opacity: 1;*/
+	-filter: alpha(opacity=100);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+	visibility: visible;
+}
+.wa-waf-filter-terms > UL
+{
+	margin-top: 15px;
+	padding: 10px;
+	min-width: 200px;
+	border: 1px solid #E3E3E3;
+	background: white;
+}
+.wa-waf-filter-terms > UL > LI
+{
+	padding: 5px 20px 5px 5px;
+	white-space: nowrap;
+	position: relative;
+}
+.wa-waf-filter-terms > UL > LI.active:after
+{
+	content: "\f00c";
+	display: block;
+	font-family: FontAwesome;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	line-height: normal;
+}
+.wa-waf-filter-terms > UL > LI:hover
+{
+	background: #F7F7F7;
+}
+.wa-waf-filter-term-color .color
+{
+	display: inline-block;
+	height: 20px;
+	vertical-align: middle;
+	width: 20px;
+	margin-right: 5px;
+	border: 1px solid #E9E9E9;
+}
+.wa-waf-filter-term-color SPAN
+{
+	display: inline-block;
+}
+.wa-waf-filter-term-image .img
+{
+	height: 20px;
+	width: 20px;
+	background: center / cover;
+	margin-right: 5px;
+}
+.wa-waf-filter-term-label SPAN
+{
+	vertical-align: middle;
+}
+.wa-waf-filter-term-label .label
+{
+	display: inline-block;
+	font-size: 10px;
+	font-weight: bold;
+	background: #C7C7C7;
+	line-height: 20px;
+	overflow: hidden;
+	height: 20px;
+	width: 50px;
+	text-align: center;
+	margin-right: 5px;
+}
+.wa-waf-filter-term-image SPAN
+{
+	vertical-align: middle;
+}
+.wa-waf-filter-terms .clear
+{
+	text-align: center;
+	background: #DDDDDD;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	display: none;
+}
+.wa-waf-list-top-nav
+{
+	margin: 30px 0;
+}
+.wa-waf-list-top-nav:before, .wa-waf-list-top-nav:after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wa-waf-list-top-nav > DIV
+{
+	float: left;
+}
+.wa-waf-list-top-nav .wa-waf-list-top-paging
+{
+	float: right;
+}
+.wa-waf-selected-rs
+{
+	display: none;
+}
+.wa-waf-selected-rs > LABEL
+{
+	display: inline-block;
+	line-height: normal;
+}
+.wa-waf-selected-rs > .wa-waf-f-item
+{
+	display: inline-block;
+	vertical-align: baseline;
+	line-height: normal;
+	margin: 0 10px;
+	color: #B4B2B2;
+	cursor: pointer;
+}
+.wa-waf-selected-rs > .wa-waf-f-item I
+{
+	font-size: 14px;
+	color: #ADACAC;
+}
+.wa-waf-selected-rs-clear-all
+{
+	display: inline;
+	cursor: pointer;
+	margin: 0 10px;
+}
+.wa-waf-paging-sect:before, .wa-waf-paging-sect:after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wa-waf-paging-sect-nav > DIV
+{
+	float: left;
+	width: 33%;
+	cursor: pointer;
+	text-transform: uppercase;
+	background: #282828;
+	padding: 10px;
+	text-align: center !important;
+	/*+border-radius: 5px;*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.wa-waf-paging-sect-nav > DIV:not(.no-click):hover
+{
+	/*+opacity: 0.8;*/
+	-filter: alpha(opacity=80);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+.wa-waf-paging-sect-all
+{
+	text-align: center;
+	width: calc(34% - 10px) !important;
+	margin: 0 5px;
+}
+.wa-waf-paging-sect .wa-waf-paging-sect-info
+{
+	text-align: center;
+	cursor: auto;
+	margin-bottom: 5px;
+}
+.wa-waf-paging-sect .no-click
+{
+	cursor: text;
+	/*+opacity: 0.2;*/
+	-filter: alpha(opacity=20);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+}
+.wa-waf-list
+{
+	position: relative;
+}
+.wa-waf-list:after
+{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.735);
+	z-index: 999;
+	/*+opacity: 0;*/
+	-filter: alpha(opacity=0);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.wa-waf-list.doing-ajax:after
+{
+	/*+opacity: 1;*/
+	-filter: alpha(opacity=100);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+	visibility: visible;
+}
+@media only screen and (max-width: 768px)
+{
+	.wa-waf-list-top-section > UL > LI
+	{
+		display: block;
+		border: none;
+		border-bottom: 1px solid #E3E3E3;
+	}
+	.wa-waf-list-order > UL > LI
+	{
+		border-bottom: none;
+		border: none !important;
+		margin-bottom: 0;
+	}
+	.wa-waf-list-top > DIV
+	{
+		float: none !important;
+	}
+	.wa-waf-filter-terms
+	{
+		right: -1px !important;
+		left: -1px !important;
+	}
+	.wa-waf-filter-terms > UL
+	{
+		margin-top: 0;
+		padding: 10px;
+		min-width: 100%;
+		border: 1px solid #E3E3E3;
+		background: white;
+	}
+	.wa-waf-list-top-nav > DIV
+	{
+		float: none !important;
+	}
+	.wa-waf-list-top-nav .wa-waf-list-top-paging
+	{
+		margin-top: 5px;
+		text-align: center;
+	}
+}
